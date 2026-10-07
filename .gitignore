@@ -1,34 +1,7 @@
-# Environment Variables
+# Ignore secret environment files containing passwords
 .env
 
-# mounted volume
-sites
-
-development/*
-!development/README.md
-!development/installer.py
-!development/apps-example.json
-!development/vscode-example/
-
-# Pycharm
-.idea
-
-# VS Code
-.vscode/**
-!.vscode/extensions.json
-
-# VS Code devcontainer
-.devcontainer
-*.code-workspace
-
-# Python
-*.pyc
-__pycache__
-venv
-
-# NodeJS
-node_modules
-
-# VitePress
-**/.vitepress/dist
-**/.vitepress/cache
+# Ignore any active runtime volume data or local test environments
+development/
+*.log
+.DS_Store
